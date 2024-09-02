@@ -1,0 +1,521 @@
+:root {
+    --primary-color: white;
+    --secondary-color: #2bde32;
+    --third-color: #9e9e9e;
+    --fourth-color: black;
+    --fifth-color: #0B0B0B;
+    --sixth-color : #949494;
+    --hover-color: #7a7878;
+    --primary-font: "Montserrat", sans-serif;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+.brand {
+    color: var(--primary-color) !important;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.brand span {
+    color: var(--secondary-color);
+}
+#header {
+    position: relative;
+    margin-top: -30px;
+}
+
+#header::after {
+    content: "";
+    background-image: url("/assets/frontend/images/background.jpg");
+    background-repeat: repeat-x;
+    opacity: 0.25; /* Atur tingkat transparansi gambar latar belakang */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Geser gambar latar belakang ke belakang elemen lain */
+}
+body {
+    background-color: black !important;
+}
+.navbar-toggler{
+    color: var(--primary-color) !important;
+}
+.nav-link{
+    color: var(--primary-color) !important;
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: var(--primary-font);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+.hero {
+    height: max-content;
+}
+
+.heroText #heroText1 {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-weight: bold;
+}
+#heroText1 span {
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    font-weight: bold;
+}
+#heroText2 {
+    color: var(--primary-color);
+}
+.btn-about {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 6%;
+}
+
+.btn-about a {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-weight: bold;
+    text-decoration: none;
+}
+#profileImg img {
+ width: 20rem;
+ height: 20rem;
+}
+
+.skill{
+    padding: 3rem;
+}
+.skillTitle, .contactTitle{
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 24px;
+    font-weight: bold;
+}
+.skillTitle span, .contactTitle span {
+    color: var(--secondary-color);
+}
+.kotakSkill {
+    background-color: var(--fifth-color);
+    border-radius: 4px;
+    width: 242px;
+    height: 266px;
+}
+.description {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 0.8rem;
+    text-align: justify;
+}
+.why {
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.why span{
+    color: var(--secondary-color);
+}
+.logoSkill {
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+    padding: 10px;
+}
+.skillSet {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 80%;
+}
+.logoSkill img:hover {
+    transform: scale(1.1);
+}
+.listMenu{
+    margin-right: 10px !important;
+}
+.skillDesc{
+    color: var(--primary-color);
+
+}
+
+.battery {
+    position: relative;
+    border: 1.4px solid var(--primary-color);
+    border-radius: 10%;
+    width: 100%;
+    height: 0.6rem;
+    border: 1px solid var(--primary-color);
+}
+
+.buttonNext , .buttonPrev{
+    border: 1px solid var(--primary-color);
+    padding-top: 0.6rem;
+    padding-bottom: 0.9rem;
+    background-color: none ;
+    color: var(--primary-color);
+    padding-inline: 3rem;
+    text-decoration: none;
+}
+.buttonNext:hover, .buttonPrev:hover{
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+.centered {
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-left: 10px;
+}
+.about{
+    background-color: var(--fifth-color);
+}
+.titleAbout{
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 0.9rem;
+}
+.titleAbout span{
+    color: var(--secondary-color);
+}
+.descAbout{
+    color: var(--primary-color);
+    font-size: 0.7rem;
+    font-family: var(--primary-font);
+    text-align: justify;
+}
+.descAbout2{
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 0.8rem;
+}
+.descAbout2 span{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.learnMore{
+    float: inline-end;
+    color: var(--primary-color);
+    font-size: 0.7rem;
+    margin-right:1rem ;
+}
+#imageAbout{
+    width: 15rem;
+    height: 20rem;
+}
+.learnMore:hover{
+    color: var(--hover-color);
+}
+a.disabled {
+    pointer-events: none;
+   color: var(--third-color);
+   border: 1px solid var(--third-color);
+}
+#contact{
+    background-color: var(--fifth-color);
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.parentSkill{
+    padding: 1rem;
+}
+/* contact me */
+.titleMessage1{
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.titleMessage2{
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 0.7rem;
+}
+.buttonMessage{
+    padding-top:0.7rem;
+    padding-bottom:0.7rem;
+    padding-inline: 4rem;
+    background-color: #2bde32 ;
+    text-decoration: none;
+    color: var(--primary-color);
+    border: none;
+    font-weight: bold;
+}
+.sendMessage{
+    background-color: var(--fourth-color);
+    padding: 3rem !important;
+}
+.contactLogo{
+    border-radius: 50%;
+    background-color: var(--fifth-color);
+    width: 50px;
+    height: 50px;
+   
+}
+.contactLogo i{
+    color: var(--primary-color);
+    font-size: 17px;
+}
+.contact-social1{
+    background-color: var(--fourth-color);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+.contact-social1 p{
+    font-size: 12px;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+}
+.contactSosmed{
+    font-weight: bold;
+}
+.contactLogo{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#comments h6{
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-weight: bold;
+}
+#comments h6 span{
+    color: var(--secondary-color);
+}
+.form-control{
+border: none !important;
+background-color: #949494 !important;
+border-radius: 0px !important;
+}
+.form-control:focus{
+    border: 1px solid var(--secondary-color) !important;
+}
+.tombol{
+    background-color: var(--secondary-color) !important;
+    border: none !important;
+    font-weight: bold !important;
+}
+
+.commentView{
+margin-left: 100px !important;
+}
+.commentView p{
+    font-size: 10px;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    margin-left: 30px !important;
+}
+.commentView .commentName{
+    font-weight: bold;
+}
+.commentName span{
+    font-weight: 100;
+}
+#footer{
+    background-color: var(--sixth-color);
+}
+.text h6{
+    font-weight: bold;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.text h6 span{
+    color: var(--secondary-color);
+}
+.icons i{
+    color: var(--primary-color);
+    font-size: 20px;
+    color: var(--fourth-color);
+}
+.icons{
+margin-top: 40px !important;
+}
+.footer-logo{
+    width: 50px ;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+.copyrights{
+    background-color: #707070;
+}
+.copyrights p {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 10px !important;
+}
+.copyrights p span{
+    font-weight: bold;
+
+}
+/* HANDPHONE SIZE */
+@media (max-width: 768px) {
+  
+    .brand {
+        margin-top: 20px;
+        justify-content: flex-start !important ;
+    }
+    .listMenu {
+        margin-top: 10px;
+    }
+    .navbarNav {
+        width: 60%;
+        height: 100vh;
+    }
+    .description {
+        margin-top: 10px;
+    }
+    .why {
+        margin-top: 20px;
+    }
+    .heroText2 {
+        font-size: 70% !important;
+    }
+  
+    .aboutGraph{
+        margin-top: 1rem !important;
+        margin-left: 1;
+    }
+    .about{
+        padding: 1rem;
+    }
+    .buttonNext, .buttonPrev{
+        padding: 0.6rem;
+        font-size: 0.9rem;
+        padding-inline: 2rem;
+    }
+    #contact{
+        padding: 0;
+        padding-top: 2rem !important;
+    }
+    #exampleInputEmail1{
+        margin-top: 1rem;
+    }
+    .sendMessage{
+        background-color: var(--fifth-color);
+    }
+    .nav-item{
+        border-bottom: 1px solid var(--primary-color);
+    }
+    .navbar{
+        background-color: var(--primary-color) !important;
+    }
+    .nav-item{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .hero {
+     
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .heroText {
+        padding: 20px; /* Adjust padding for better spacing */
+    }
+
+    #heroText1, #heroText2 {
+        text-align: center; /* Center text */
+    }
+
+    .btn-about {
+        display: inline-block;
+        margin: 10px auto 0; /* Center button with margin auto */
+    }
+    .hero2{
+        justify-content: center;
+    }
+}
+/* TABLET SIZE */
+@media screen and (min-width: 768px) {
+
+    .about{
+        padding: 2rem;
+    }  
+    .contact-social1 p{
+        font-size: 10px; 
+    }
+ 
+}
+/* LAPTOP SIZE */
+@media  (min-width: 992px){ 
+    .btn-about{
+        padding: 14px !important;
+    }
+    #profileImg img{
+        width: 30rem;
+        height: 30rem;
+        margin-bottom: 4vh;
+    }
+    .about{
+        padding: 4rem;
+    }
+    #imageAbout{
+        width: 25rem !important;
+        height: 30rem !important;
+    }
+    .titleAbout{
+        font-size: 2rem;
+    }
+    .descAbout{
+        font-size: 1rem;
+    }
+    .descAbout2, .descAbout2 span{
+        font-size: 1rem;
+    }
+    #contentAbout{
+        padding: 1.7rem;
+    }
+    .contact-social1{
+        margin-bottom: 10px;
+        border-radius: 0 !important;
+        margin-left: 20px;
+        height: 101px;
+    }
+    .contact-social1 p{
+        font-size: 16px; 
+    }
+    .contactLogo{
+        width: 15%!important ;
+        height: 60px;
+    }
+    .contactLogo i{
+        font-size: 23px;
+    }
+    .contactLogo{
+        margin-left:18px ;
+    }
+    #comments{
+        margin-top: 80px;
+    }
+    .nav-link {
+        position: relative;
+    }
+    
+    /* Pseudo-element before hover */
+    .nav-link::after {
+        content: '';
+        display: block;
+        border-bottom: 2px solid var(--secondary-color);
+        width: 60%;
+        margin: auto;
+        padding-bottom: 2px;
+        transform: scaleX(0); /* Initial state with scaleX(0) */
+        transition: transform 0.3s ease; /* Transition for smooth animation */
+    }
+    
+    /* Pseudo-element on hover */
+    .nav-link:hover::after {
+        transform: scaleX(1); /* Scale to full width on hover */
+    }
+}
